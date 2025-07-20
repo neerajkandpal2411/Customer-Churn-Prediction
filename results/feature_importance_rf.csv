@@ -1,0 +1,56 @@
+feature,importance
+Monthly_to_Total_ratio,0.10773968832962659
+tenure,0.08583473484021528
+TotalCharges,0.08288861516747216
+Contract_Month-to-month,0.08128452055514881
+MonthlyCharges,0.06927006851763133
+CLV_per_month,0.06545908726393672
+OnlineSecurity_No,0.05053239572436263
+InternetService_Fiber optic,0.04116760422839333
+TechSupport_No,0.0373395376257306
+Tenure_Group_0-1 Year,0.032501663046826036
+PaymentMethod_Electronic check,0.02815534268878813
+Contract_Two year,0.023376299601324483
+InternetService_DSL,0.01837868395235738
+OnlineBackup_No,0.013489521191697194
+DeviceProtection_No,0.01204185615713401
+Monthly_Charges_Group_High,0.011368706875787178
+Contract_One year,0.010240565436937124
+PaperlessBilling_No,0.010111496988563062
+OnlineSecurity_Yes,0.010055855110400126
+Tenure_Group_5+ Years,0.010039234500113228
+SeniorCitizen,0.009950551651873689
+PaperlessBilling_Yes,0.009369282637036241
+TechSupport_Yes,0.008733211914721335
+gender_Female,0.007783460574230809
+MultipleLines_No,0.00743581418897339
+StreamingMovies_Yes,0.007425816676896726
+gender_Male,0.007411970486223418
+Partner_Yes,0.00726632659849544
+MultipleLines_Yes,0.007145273087920782
+Dependents_No,0.006817727164025695
+Partner_No,0.00658237464091094
+PaymentMethod_Credit card (automatic),0.006580365558941762
+Dependents_Yes,0.006498429741670962
+StreamingMovies_No,0.006495862357969752
+OnlineBackup_Yes,0.0061725144176241545
+StreamingTV_Yes,0.006030457692552068
+StreamingTV_No,0.006021157477640094
+PaymentMethod_Mailed check,0.006003804418589175
+PaymentMethod_Bank transfer (automatic),0.005757615048203343
+TechSupport_No internet service,0.005702144244074642
+Monthly_Charges_Group_Medium,0.00568301908233626
+OnlineSecurity_No internet service,0.005572722147544615
+OnlineBackup_No internet service,0.005334563253410922
+DeviceProtection_Yes,0.004571908135860839
+InternetService_No,0.004490084922454058
+StreamingTV_No internet service,0.004471331107842265
+StreamingMovies_No internet service,0.004118791552833534
+Tenure_Group_2-4 Years,0.003770703408489837
+Tenure_Group_1-2 Years,0.0035464451855580915
+Monthly_Charges_Group_Low,0.00315169615868287
+DeviceProtection_No internet service,0.0028084828657505127
+PhoneService_Yes,0.0027011690136194595
+Tenure_Group_4-5 Years,0.002551305566620103
+MultipleLines_No phone service,0.0024961393418987347
+PhoneService_No,0.002271999876078106
