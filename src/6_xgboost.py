@@ -11,21 +11,21 @@ print("="*50)
 print("BUILDING XGBOOST MODEL")
 print("="*50)
 
-# Load preprocessed data
+#loading preprocessed data
 X_train = pd.read_csv('results/X_train.csv')
 X_test = pd.read_csv('results/X_test.csv')
 y_train = pd.read_csv('results/y_train.csv').values.ravel()
 y_test = pd.read_csv('results/y_test.csv').values.ravel()
 
-# Basic XGBoost model
+#basic XGBoost model
 xgb_basic = XGBClassifier(use_label_encoder=False, eval_metric='logloss', random_state=42)
 xgb_basic.fit(X_train, y_train)
 
-# Predict
+#predicting
 xgb_pred = xgb_basic.predict(X_test)
 xgb_pred_proba = xgb_basic.predict_proba(X_test)[:, 1]
 
-# Evaluate basic model
+#evaluating basic model
 print("BASIC XGBOOST RESULTS:")
 print(f"Accuracy: {accuracy_score(y_test, xgb_pred):.4f}")
 print(f"ROC AUC Score: {roc_auc_score(y_test, xgb_pred_proba):.4f}")
@@ -34,7 +34,7 @@ print(classification_report(y_test, xgb_pred))
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, xgb_pred))
 
-# Hyperparameter tuning
+#hyperparameter tuning
 print("\n" + "="*30)
 print("HYPERPARAMETER TUNING...")
 print("="*30)
@@ -57,11 +57,11 @@ grid_search_xgb = GridSearchCV(
 
 grid_search_xgb.fit(X_train, y_train)
 
-# Best XGBoost model
+#best XGBoost model
 best_xgb = grid_search_xgb.best_estimator_
 print(f"Best XGBoost parameters: {grid_search_xgb.best_params_}")
 
-# Evaluate tuned model
+#evaluating tuned model
 xgb_best_pred = best_xgb.predict(X_test)
 xgb_best_proba = best_xgb.predict_proba(X_test)[:, 1]
 
@@ -71,7 +71,7 @@ print(f"ROC AUC Score: {roc_auc_score(y_test, xgb_best_proba):.4f}")
 print("\nClassification Report:")
 print(classification_report(y_test, xgb_best_pred))
 
-# Feature importance
+#feature importance
 feature_importance_xgb = pd.DataFrame({
     'feature': X_train.columns,
     'importance': best_xgb.feature_importances_
@@ -80,6 +80,6 @@ feature_importance_xgb = pd.DataFrame({
 print("\nTOP 10 MOST IMPORTANT FEATURES (XGBoost):")
 print(feature_importance_xgb.head(10))
 
-# Save model and feature importance (optional)
+#saving model and feature importance
 joblib.dump(best_xgb, 'results/best_xgb_model.pkl')
 feature_importance_xgb.to_csv('results/feature_importance_xgb.csv', index=False)
