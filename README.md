@@ -51,5 +51,5 @@ python src/7_model_comparison.py
 ---
 
 **🙋‍♂️ Author**: <br>
-Neeraj Kandpal
-LinkedIn |(https://www.linkedin.com/in/neeraj-kandpal/)
+Neeraj Kandpal <br>
+LinkedIn : (https://www.linkedin.com/in/neeraj-kandpal/)
