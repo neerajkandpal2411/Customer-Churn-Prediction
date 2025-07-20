@@ -46,9 +46,10 @@ pip install -r requirements.txt
 python src/1_data_cleaning.py
 ...
 python src/7_model_comparison.py
+```
 
 ---
 
-## 🙋‍♂️ Author
+🙋‍♂️ Author
 Neeraj Kandpal
 LinkedIn |(https://www.linkedin.com/in/neeraj-kandpal/)
