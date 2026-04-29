@@ -56,6 +56,6 @@ Customer churn is a critical problem in the telecom industry. The goal is to ide
 
 
 **🙋‍♂️ Author**: <br>
-Vedaansh Vishwakarma <br>
-LinkedIn : (www.linkedin.com/in/vedaansh-vishwakarma-057a7124b)
+Neeraj Kandpal <br>
+LinkedIn : ([www.linkedin.com/in/vedaansh-vishwakarma-057a7124b](https://www.linkedin.com/in/neeraj-kandpal/))
 =======
