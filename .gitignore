@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Data & results (optional – keep if you want to share models)
+data/results/
+data/X_train.csv
+data/X_test.csv
+data/y_train.csv
+data/y_test.csv
+data/cleaned_data.csv
+data/engineered_data.csv
+
+# Auth config (contains passwords)
+auth_config.yaml
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
